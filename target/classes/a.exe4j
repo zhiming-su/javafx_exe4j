@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exe4j version="8.0.1" transformSequenceNumber="3">
+  <directoryPresets config="C:/Users/Administrator/Desktop/jar" />
+  <application name="zfb" distributionSourceDir="C:/Users/Administrator/Desktop/jar" />
+  <executable name="zfb" wrapperType="embed" executableDir="." executableMode="gui" singleInstance="true" />
+  <java mainClass="com.zz.zfb.Application" preferredVM="client" minVersion="11" maxVersion="17">
+    <searchSequence>
+      <directory location="./myjre1" />
+    </searchSequence>
+    <classPath>
+      <archive location="C:/Users/Administrator/Desktop/jar/zfb-1.0-SNAPSHOT-shaded.jar" failOnError="false" />
+    </classPath>
+  </java>
+</exe4j>
