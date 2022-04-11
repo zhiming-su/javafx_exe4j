@@ -1,1 +1,5 @@
-/.idea/
+/src/alipayCertPublicKey_RSA2.crt/
+/src/alipayRootCert.crt/
+/src/appCertPublicKey_2021002128635452.crt/
+/src/appId.txt/
+/src/privateKey.txt/
