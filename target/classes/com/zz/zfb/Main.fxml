@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<GridPane
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.zz.zfb.controller.MainController"
+        xmlns="http://javafx.com/javafx/8"
+        minHeight="480"
+        minWidth="480"
+>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200" minWidth="50" prefWidth="80"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200" minWidth="50" prefWidth="80"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+
+    <Label text="转账金额" GridPane.rowIndex="0" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <TextField fx:id="transAmount" GridPane.rowIndex="0" GridPane.columnIndex="1">
+        <GridPane.margin>
+            <Insets left="20.0" right="50.0"/>
+        </GridPane.margin>
+    </TextField>
+
+    <Label text="收款人账号" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <TextField fx:id="identity" GridPane.rowIndex="1" GridPane.columnIndex="1">
+        <GridPane.margin>
+            <Insets left="20.0" right="50.0"/>
+        </GridPane.margin>
+    </TextField>
+
+    <Label text="收款人姓名" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <TextField fx:id="name" GridPane.rowIndex="2" GridPane.columnIndex="1">
+        <GridPane.margin>
+            <Insets left="20.0" right="50.0"/>
+        </GridPane.margin>
+    </TextField>
+
+    <Label text="转账业务标题" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <TextField fx:id="orderTitle" GridPane.rowIndex="3" GridPane.columnIndex="1">
+        <GridPane.margin>
+            <Insets left="20.0" right="50.0"/>
+        </GridPane.margin>
+    </TextField>
+
+    <Label text="转账业务备注" GridPane.rowIndex="4" GridPane.columnIndex="0" GridPane.halignment="RIGHT"/>
+    <TextField fx:id="remark" GridPane.rowIndex="4" GridPane.columnIndex="1">
+        <GridPane.margin>
+            <Insets left="20.0" right="50.0"/>
+        </GridPane.margin>
+    </TextField>
+
+    <Button text="转账" onAction="#onHelloButtonClick" GridPane.rowIndex="5" GridPane.columnIndex="0"
+            GridPane.halignment="RIGHT"/>
+</GridPane>
